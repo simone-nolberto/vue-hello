@@ -6,7 +6,7 @@ const {createApp} = Vue
         data(){
             return{
                 message: 'Vue Hello',
-                image: 'dragonball.jpeg'
+                image: './assets/img/dragonball.jpeg'
             }
         }
     }).mount('#app');

@@ -7,11 +7,36 @@
     <title>VUE HELLO</title>
 </head>
 
+<style>
+    .df {
+        display: flex;
+    }
+
+    .mainbox {
+        flex-direction: column;
+    }
+</style>
+
 <body>
 
-    <div id="app">
+    <div id="app" >
         <h1>{{message}}</h1>
         <img :src="image" alt="">
+
+        <div class="mainbox df">
+            <p v-show="check">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, modi at. Earum dolores
+                eius
+                exercitationem, officiis distinctio ad, minus perferendis consequuntur quos quae porro tempore, placeat
+                eos
+                ducimus? Adipisci, id!</p>
+            <ul>
+                <li v-for="character in characters">
+                    {{character}}
+                </li>
+            </ul>
+        </div>
+
+
 
     </div>
 
